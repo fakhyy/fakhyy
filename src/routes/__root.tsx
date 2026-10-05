@@ -8,50 +8,16 @@ import { TanStackDevtools } from '@tanstack/react-devtools'
 
 import TanStackQueryDevtools from '../integrations/tanstack-query/devtools'
 
-import appCss from '~/styles/globals.css?url'
-
 import type { QueryClient } from '@tanstack/react-query'
 import Providers from '~/components/providers'
-import { metadata } from '~/metadata'
+import { links, meta, scripts } from '~/seo'
 
 interface MyRouterContext {
   queryClient: QueryClient
 }
 
 export const Route = createRootRouteWithContext<MyRouterContext>()({
-  head: () => ({
-    meta: metadata,
-    links: [
-      {
-        rel: 'stylesheet',
-        href: appCss,
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        href: '/favicon-96x96.png',
-        sizes: '96x96',
-      },
-      {
-        rel: 'icon',
-        type: 'image/svg+xml',
-        href: '/favicon.svg',
-      },
-      {
-        rel: 'shortcut icon',
-        href: '/favicon.ico',
-      },
-      {
-        rel: 'apple-touch-icon',
-        href: '/apple-touch-icon.png',
-        sizes: '180x180',
-      },
-      {
-        rel: 'manifest',
-        href: '/site.webmanifest',
-      },
-    ],
-  }),
+  head: () => ({ meta, links, scripts }),
   shellComponent: RootDocument,
 })
 

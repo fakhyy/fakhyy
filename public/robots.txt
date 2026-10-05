@@ -1,0 +1,35 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://fakhyy.com/sitemap.xml
+
+# Disallow admin/utility paths (if any)
+# Disallow: /api/
+# Disallow: /_app/
+
+# Crawl-delay for polite bots (optional)
+# Crawl-delay: 10
+
+# Specific bot rules
+# User-agent: GPTBot
+# Disallow:
+
+# User-agent: ChatGPT-User
+# Disallow:
+
+User-agent: CCBot
+Disallow: /
+
+# User-agent: Google-Extended
+# Disallow: /
+
+User-agent: anthropic-ai
+Disallow:
+
+User-agent: ClaudeBot
+Disallow:
+
+User-agent: Bytespider
+Disallow: /

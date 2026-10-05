@@ -1,6 +1,6 @@
-import type { MetaDescriptor } from '@tanstack/react-router'
+import appCss from '~/styles/globals.css?url'
 
-export const metadata: MetaDescriptor[] = [
+export const meta = [
   {
     charSet: 'utf-8',
   },
@@ -126,5 +126,86 @@ export const metadata: MetaDescriptor[] = [
   {
     property: 'profile:username',
     content: 'fakhyy',
+  },
+]
+
+export const links = [
+  {
+    rel: 'stylesheet',
+    href: appCss,
+  },
+  {
+    rel: 'icon',
+    type: 'image/png',
+    href: '/favicon-96x96.png',
+    sizes: '96x96',
+  },
+  {
+    rel: 'icon',
+    type: 'image/svg+xml',
+    href: '/favicon.svg',
+  },
+  {
+    rel: 'shortcut icon',
+    href: '/favicon.ico',
+  },
+  {
+    rel: 'apple-touch-icon',
+    href: '/apple-touch-icon.png',
+    sizes: '180x180',
+  },
+  {
+    rel: 'manifest',
+    href: '/site.webmanifest',
+  },
+]
+
+export const scripts = [
+  {
+    type: 'application/ld+json',
+    children: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Person',
+          '@id': 'https://fakhyy.com/#person',
+          name: 'Fakhar Sultan',
+          alternateName: ['Fakhyy', 'M. Fakhar Sultan'],
+          url: 'https://fakhyy.com/',
+          jobTitle: 'Software Engineer',
+          description:
+            'Software engineer focused on TypeScript, Rust, modern web development, and systems programming.',
+          sameAs: [
+            'https://github.com/fakhyy',
+            'https://linkedin.com/in/fakhyy',
+          ],
+          knowsAbout: [
+            'Software Engineering',
+            'TypeScript',
+            'Rust',
+            'React',
+            'Next.js',
+            'TanStack',
+            'Node.js',
+            'Hono',
+            'PostgreSQL',
+            'Systems Programming',
+            'Web Development',
+          ],
+        },
+
+        {
+          '@type': 'WebSite',
+          '@id': 'https://fakhyy.com/#website',
+          url: 'https://fakhyy.com/',
+          name: 'Fakhar Sultan',
+          description:
+            'Personal website of Fakhar Sultan, a software engineer exploring code, systems, and the ideas behind them.',
+          publisher: {
+            '@id': 'https://fakhyy.com/#person',
+          },
+        },
+      ],
+    }),
   },
 ]

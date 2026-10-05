@@ -228,7 +228,7 @@ function Home() {
       </header>
       <div className="mx-auto max-w-2xl px-6 pt-16 sm:px-8 sm:pt-24 mt-20">
         {/* Hero */}
-        <section className="space-y-8">
+        <section id="hero" className="space-y-8">
           <div className="space-y-4">
             <p className="font-mono text-sm uppercase tracking-widest text-muted-foreground">
               {' '}
@@ -407,7 +407,7 @@ function Home() {
         </section>
 
         {/* Languages */}
-        <section className="mt-20">
+        <section id="languages" className="mt-20">
           <SectionTitle>Languages</SectionTitle>
 
           <div className="flex flex-wrap gap-2">
@@ -423,7 +423,7 @@ function Home() {
         </section>
 
         {/* Stack */}
-        <section className="mt-24">
+        <section id="stack" className="mt-24">
           <SectionTitle>Stack</SectionTitle>
 
           <div className="flex flex-wrap gap-x-4 gap-y-3">
@@ -439,7 +439,7 @@ function Home() {
         </section>
 
         {/* Contact */}
-        <section className="mt-32">
+        <section id="contact" className="mt-32">
           {' '}
           <SectionTitle>Get in touch</SectionTitle>{' '}
           <div className="rounded-2xl border-2 bg-muted/30 p-6 sm:p-8">
