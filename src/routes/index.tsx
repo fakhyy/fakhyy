@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { cn } from 'cn'
 import { ArrowUpRight } from 'lucide-react'
 import { useTheme } from '~/components/providers/theme-provider'
 import { Button } from '~/components/ui/button'
@@ -7,7 +8,7 @@ export const Route = createFileRoute('/')({
   component: Home,
 })
 
-const languages = ['TypeScript', 'Rust', 'Python', 'C++', 'SQL']
+const languages = ['TypeScript', 'Rust', 'Python', 'SQL']
 
 const stack = [
   'React',
@@ -44,31 +45,33 @@ const projects = [
   {
     name: 'sellcalc',
     description:
-      'A collection of calculators for sellers on eBay, Amazon, and Etsy. Built around accurate platform fees and pricing data.',
+      'A free collection of eBay, Amazon, and Etsy seller calculators for estimating marketplace fees, pricing, profit, and selling costs.',
     tags: ['TypeScript', 'Next.js', 'PostgreSQL'],
     href: 'https://sellcalc.org',
-    accent: 'bg-emerald-400',
+    accent: 'bg-gray-400',
+    status: 'under development',
+    disabled: true,
   },
   {
-    name: 'RaLynk',
+    name: 'StoryMe AI',
     description:
-      'An open-source link analytics platform for creating short links and understanding where your traffic comes from.',
-    tags: ['TypeScript', 'Hono', 'PostgreSQL'],
-    href: '#',
+      'An open-source AI storytelling project that turns children’s images and ideas into personalized stories, poems, and educational content.',
+    tags: ['TypeScript', 'AI', 'Open Source'],
+    href: 'https://github.com/fakhyy/storyme-ai',
     accent: 'bg-indigo-400',
   },
   {
-    name: 'Just Post',
+    name: 'fakhyy',
     description:
-      'A simple headless blogging system focused on writing. Tiptap editor, API-first architecture, and no unnecessary features.',
-    tags: ['TypeScript', 'Tiptap', 'Hono'],
-    href: '#',
+      'A personal website for sharing projects, writing, experiments, and thoughts on software engineering, Rust, TypeScript, systems, mathematics, physics, and philosophy.',
+    tags: ['TanStack Start', 'TypeScript', 'Rust'],
+    href: 'https://fakhyy.com',
     accent: 'bg-orange-400',
   },
   {
     name: '@fakhyy/retemp',
     description:
-      'A type-safe React Email and Resend helper with automatic prop inference for building reusable transactional emails.',
+      'A type-safe React Email and Resend utility for building reusable transactional emails with automatic TypeScript prop inference.',
     tags: ['TypeScript', 'React Email', 'Resend'],
     href: 'https://www.npmjs.com/package/@fakhyy/retemp',
     accent: 'bg-sky-400',
@@ -76,50 +79,68 @@ const projects = [
 ]
 
 function ProjectCard({ project }: { project: (typeof projects)[number] }) {
-  return (
-    <a
-      href={project.href}
-      target={project.href.startsWith('http') ? '_blank' : undefined}
-      rel={project.href.startsWith('http') ? 'noreferrer' : undefined}
-      className="group relative flex min-h-[270px] flex-col overflow-hidden rounded-2xl border-2 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg bg-accent/10 dark:bg-accent/20"
+  const content = (
+    <div
+      className={cn(
+        'group relative flex min-h-[270px] flex-col overflow-hidden rounded-2xl border-2 p-6 transition-all duration-300 bg-accent/10 dark:bg-accent/20 h-full',
+        !project.disabled && 'hover:-translate-y-1 hover:shadow-lg',
+        project.disabled && 'cursor-default opacity-70',
+      )}
     >
-      {' '}
       <div
-        className={`absolute right-5 top-5 size-3 rounded-full ${project.accent}`}
-      />{' '}
+        className={cn(
+          'absolute right-5 top-5 rounded-full',
+          project.accent,
+          project.status ? 'px-2 font-mono text-sm text-neutral-900' : 'size-3',
+        )}
+      >
+        {project.status}
+      </div>
+
       <div className="mb-10">
-        {' '}
         <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-          {' '}
-          Project{' '}
-        </span>{' '}
-      </div>{' '}
-      <div className="mt-auto">
-        {' '}
+          Project
+        </span>
+      </div>
+
+      <div className="">
         <div className="mb-3 flex items-center gap-2">
-          {' '}
-          <h3 className="text-2xl font-bold tracking-tight">
-            {project.name}
-          </h3>{' '}
-          <ArrowUpRight className="size-5 text-muted-foreground transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />{' '}
-        </div>{' '}
+          <h3 className="text-2xl font-bold tracking-tight">{project.name}</h3>
+
+          {!project.disabled && (
+            <ArrowUpRight className="size-5 text-muted-foreground transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
+          )}
+        </div>
+
         <p className="mb-5 text-sm leading-6 text-muted-foreground">
-          {' '}
-          {project.description}{' '}
-        </p>{' '}
+          {project.description}
+        </p>
+
         <div className="flex flex-wrap gap-2">
-          {' '}
           {project.tags.map((tag) => (
             <span
               key={tag}
               className="rounded-full bg-muted px-3 py-1 font-mono text-[11px]"
             >
-              {' '}
-              {tag}{' '}
+              {tag}
             </span>
-          ))}{' '}
-        </div>{' '}
-      </div>{' '}
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+
+  if (project.disabled) {
+    return content
+  }
+
+  return (
+    <a
+      href={project.href}
+      target={project.href.startsWith('http') ? '_blank' : undefined}
+      rel={project.href.startsWith('http') ? 'noreferrer' : undefined}
+    >
+      {content}
     </a>
   )
 }
