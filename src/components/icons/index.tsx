@@ -1,1 +1,5 @@
-export { PythonIcon } from './python'
+export { EmailIcon } from './email'
+export { GithubIcon } from './github'
+export { LinkedinIcon } from './linkedin'
+export { MoonIcon } from './moon'
+export { SunIcon } from './sun'

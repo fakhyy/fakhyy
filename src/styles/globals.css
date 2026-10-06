@@ -2,7 +2,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/newsreader";
 @import "@fontsource-variable/alegreya";
 @import '@fontsource/luckiest-guy';
 @import '@fontsource/mononoki';
@@ -52,7 +51,6 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
   --font-mono: 'Mononoki', monospace;
-  --font-serif: Merriweather, ui-serif, serif;
   --radius: 0.25rem;
   --tracking-tighter: calc(var(--tracking-normal) - 0.05em);
   --tracking-tight: calc(var(--tracking-normal) - 0.025em);

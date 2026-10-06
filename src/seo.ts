@@ -162,6 +162,11 @@ export const links = [
 
 export const scripts = [
   {
+    defer: true,
+    src: 'https://cloud.umami.is/script.js',
+    'data-website-id': '7603e2a9-b208-407f-8e92-b002e37c7803',
+  },
+  {
     type: 'application/ld+json',
     children: JSON.stringify({
       '@context': 'https://schema.org',
