@@ -15,7 +15,7 @@ export function AboutSection() {
           <p>
             These days, I spend most of my time with{' '}
             <span className="text-foreground">TypeScript</span> and
-            <span className="text-foreground">Rust</span>. I enjoy the web, but
+            <span className="text-foreground"> Rust</span>. I enjoy the web, but
             I am equally interested in what happens underneath it: operating
             systems, networking, databases, compilers, and the strange little
             details that make computers work.

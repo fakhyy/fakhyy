@@ -68,7 +68,7 @@ export const meta = [
   },
   {
     property: 'og:image',
-    content: '/og-image.png',
+    content: 'https://fakhyy.com/og-image.png',
   },
   {
     property: 'og:image:width',
@@ -103,7 +103,7 @@ export const meta = [
   },
   {
     name: 'twitter:image',
-    content: '/og-image.png',
+    content: 'https://fakhyy.com/og-image.png',
   },
   {
     name: 'twitter:image:alt',
