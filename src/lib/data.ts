@@ -24,11 +24,11 @@ const stack = [
 
 const projects = [
   {
-    name: 'sellcalc',
+    name: 'kv CLI',
     description:
-      'A free collection of eBay, Amazon, and Etsy seller calculators for estimating marketplace fees, pricing, profit, and selling costs.',
-    tags: ['TypeScript', 'Next.js', 'PostgreSQL'],
-    href: 'https://sellcalc.org',
+      'A lightweight Rust CLI for secure local key-value storage using SQLite, with optional full-database encryption powered by SQLCipher.',
+    tags: ['Rust'],
+    href: 'https://github.com/fakhyy/kv-cli.git',
     accent: 'bg-gray-400',
     status: 'under development',
     disabled: true,
