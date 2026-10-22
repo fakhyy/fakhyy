@@ -31,7 +31,7 @@ const projects = [
     href: 'https://github.com/fakhyy/kv-cli.git',
     accent: 'bg-gray-400',
     status: 'under development',
-    disabled: true,
+    // disabled: true,
   },
   {
     name: 'StoryMe AI',
