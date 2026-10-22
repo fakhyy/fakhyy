@@ -30,7 +30,7 @@ const projects = [
     tags: ['Rust'],
     href: 'https://github.com/fakhyy/kv.git',
     accent: 'bg-gray-400',
-    status: 'under development',
+    // status: 'under development',
     // disabled: true,
   },
   {
