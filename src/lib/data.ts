@@ -29,7 +29,7 @@ const projects = [
       'A lightweight Rust CLI for secure local key-value storage using SQLite, with optional full-database encryption powered by SQLCipher.',
     tags: ['Rust'],
     href: 'https://github.com/fakhyy/kv.git',
-    accent: 'bg-gray-400',
+    accent: 'bg-red-400',
     // status: 'under development',
     // disabled: true,
   },

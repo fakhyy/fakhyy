@@ -28,7 +28,7 @@ export function SocialLinkCard({
   return link.name === 'Email' ? (
     <a
       href={link.href}
-      className="group flex items-center gap-3 rounded-xl border-2  p-4 transition-colors hover:bg-accent/50"
+      className="group flex items-center gap-3 rounded-xl border-2  p-4 transition-colors hover:bg-accent/50 dark:hover:bg-accent/20"
     >
       <link.icon />
       <span className="text-sm">{link.name}</span>
@@ -39,7 +39,7 @@ export function SocialLinkCard({
       href={link.href}
       target="_blank"
       rel="noreferrer"
-      className="group flex items-center gap-3 rounded-xl border-2  p-4 transition-colors hover:bg-accent/50"
+      className="group flex items-center gap-3 rounded-xl border-2  p-4 transition-colors hover:bg-accent/50 dark:hover:bg-accent/20"
     >
       <link.icon />
       <span className="text-sm">{link.name}</span>
@@ -57,8 +57,8 @@ export function HeroSection() {
         </p>
 
         <h1 className="text-5xl font-luckiest-guy tracking-wide sm:text-6xl">
-          M. <span className="text-emerald-500">Fakhar </span>
-          <span>Sultan</span>
+          M. <span className="text-emerald-500">Fakhar</span>
+          <span> Sultan</span>
         </h1>
 
         <p className="max-w-2xl text-2xl leading-relaxed">
@@ -67,7 +67,7 @@ export function HeroSection() {
       </div>
       <div className="grid gap-3 sm:grid-cols-3">
         {socialLinks.map((link) => (
-          <SocialLinkCard link={link} />
+          <SocialLinkCard key={link.name} link={link} />
         ))}
       </div>
     </section>

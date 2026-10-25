@@ -11,8 +11,8 @@ export function SunIcon() {
       xmlSpace="preserve"
       className="fill-foreground"
     >
-      <g stroke-width="0"></g>
-      <g stroke-linecap="round" stroke-linejoin="round"></g>
+      <g strokeWidth="0"></g>
+      <g strokeLinecap="round" strokeLinejoin="round"></g>
       <g>
         <g>
           <circle
