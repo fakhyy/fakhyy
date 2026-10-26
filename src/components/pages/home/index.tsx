@@ -10,7 +10,7 @@ export function HomePage() {
   return (
     <main className="min-h-screen bg-background text-foreground relative">
       <Header />
-      <div className="mx-auto max-w-2xl px-6 pt-16 sm:px-8 sm:pt-24 mt-20">
+      <div className="mx-auto max-w-2xl px-6 pt-16 sm:px-8 mt-20">
         <HeroSection />
         <AboutSection />
         <ProjectSection />

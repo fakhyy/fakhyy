@@ -2,6 +2,7 @@ import { ArrowUpRightIcon } from 'lucide-react'
 import { SectionTitle } from '~/components/common'
 
 export function ContactSection() {
+
   return (
     <section id="contact" className="mt-32">
       <SectionTitle>Get in touch</SectionTitle>
@@ -11,6 +12,7 @@ export function ContactSection() {
           technology?
         </p>
         <a
+          role='button'
           href="mailto:hello@fakhyy.com"
           className="group mt-6 inline-flex items-center gap-2 rounded-xl bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
         >
