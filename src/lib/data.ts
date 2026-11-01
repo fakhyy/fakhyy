@@ -24,14 +24,22 @@ const stack = [
 
 const projects = [
   {
+    name: 'EnvX',
+    description:
+      'An opensource environment variable management tool that simplifies the process of managing and sharing environment variables across different projects and teams.',
+    tags: ['Next.js', 'TypeScript', 'Rust', 'Postgres'],
+    href: 'https://github.com/fakhyy/envx.git',
+    accent: 'bg-gray-400',
+    status: 'under development',
+    disabled: true,
+  },
+  {
     name: 'kv CLI',
     description:
       'A lightweight Rust CLI for secure local key-value storage using SQLite, with optional full-database encryption powered by SQLCipher.',
     tags: ['Rust'],
     href: 'https://github.com/fakhyy/kv.git',
-    accent: 'bg-red-400',
-    // status: 'under development',
-    // disabled: true,
+    accent: 'bg-red-400'
   },
   {
     name: 'StoryMe AI',
