@@ -8,12 +8,15 @@ export function StackSection() {
 
       <div className="flex flex-wrap gap-x-4 gap-y-3">
         {stack.map((item) => (
-          <span
-            key={item}
-            className="text-sm text-muted-foreground hover:text-foreground font-mono bg-muted px-2 py-0.5 rounded-2xl "
+          <a
+            key={item.label}
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-2xl bg-muted px-2 py-0.5 font-mono text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
-            {item}
-          </span>
+            {item.label}
+          </a>
         ))}
       </div>
     </section>

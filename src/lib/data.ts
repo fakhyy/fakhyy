@@ -3,22 +3,22 @@ const languages = ['TypeScript', 'Rust', 'Python', 'SQL']
 
 // ========== Stack ======================= //
 const stack = [
-  'React',
-  'Next.js',
-  'TanStack Start',
-  'SvelteKit',
-  'Node.js',
-  'Bun',
-  'Hono',
-  'PostgreSQL',
-  'MongoDB',
-  'Redis',
-  'Drizzle',
-  'Tailwind CSS',
-  'shadcn/ui',
-  'Tiptap',
-  'Docker',
-]
+  { label: "React", href: "https://react.dev" },
+  { label: "Next.js", href: "https://nextjs.org" },
+  { label: "TanStack Start", href: "https://tanstack.com/start" },
+  { label: "SvelteKit", href: "https://svelte.dev/docs/kit" },
+  { label: "Node.js", href: "https://nodejs.org" },
+  { label: "Bun", href: "https://bun.sh" },
+  { label: "Hono", href: "https://hono.dev" },
+  { label: "PostgreSQL", href: "https://www.postgresql.org" },
+  { label: "MongoDB", href: "https://www.mongodb.com" },
+  { label: "Redis", href: "https://redis.io" },
+  { label: "Drizzle ORM", href: "https://orm.drizzle.team" },
+  { label: "Tailwind CSS", href: "https://tailwindcss.com" },
+  { label: "shadcn/ui", href: "https://ui.shadcn.com" },
+  { label: "Tiptap", href: "https://tiptap.dev" },
+  { label: "Docker", href: "https://www.docker.com" },
+];
 
 // ========== Projects =================== //
 
