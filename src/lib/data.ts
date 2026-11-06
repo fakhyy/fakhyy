@@ -29,8 +29,8 @@ const projects = [
       'A minimal, distraction-free space to capture, organize, and revisit your thoughts.',
     tags: ['Next.js', 'TypeScript', 'Postgres', 'Tiptap'],
     href: 'https://github.com/fakhyy/noesis.git',
-    accent: 'bg-yellow-400',
-    // status: 'under development',
+    accent: 'bg-gray-400',
+    status: 'under development',
     // disabled: true,
   },
   {
