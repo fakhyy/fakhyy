@@ -24,14 +24,14 @@ const stack = [
 
 const projects = [
   {
-    name: 'EnvX',
+    name: 'Noesis',
     description:
-      'An opensource environment variable management tool that simplifies the process of managing and sharing environment variables across different projects and teams.',
-    tags: ['Next.js', 'TypeScript', 'Rust', 'Postgres'],
-    href: 'https://github.com/fakhyy/envx.git',
-    accent: 'bg-gray-400',
-    status: 'under development',
-    disabled: true,
+      'A minimal, distraction-free space to capture, organize, and revisit your thoughts.',
+    tags: ['Next.js', 'TypeScript', 'Postgres', 'Tiptap'],
+    href: 'https://github.com/fakhyy/noesis.git',
+    accent: 'bg-yellow-400',
+    // status: 'under development',
+    // disabled: true,
   },
   {
     name: 'kv CLI',
