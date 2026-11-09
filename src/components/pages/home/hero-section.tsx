@@ -50,7 +50,7 @@ export function SocialLinkCard({
 
 export function HeroSection() {
   return (
-    <section id="hero" className="space-y-8">
+    <section id="hero" className="space-y-8 mt-10">
       <div className="space-y-4">
         <p className="font-mono text-sm uppercase tracking-widest text-muted-foreground">
           Software Engineer · Builder · Curious mind

@@ -5,7 +5,7 @@ export function AboutSection() {
     <section id="about" className="mt-28 scroll-mt-28">
       <SectionTitle>Full Story</SectionTitle>
       <div className="space-y-5 text-base leading-8 text-muted-foreground">
-        <div className="text-xl space-y-5 bg-muted dark:bg-muted/30 rounded-3xl p-6 sm:p-8">
+        <div className="text-xl space-y-5 bg-muted dark:bg-muted/30 rounded-3xl p-6 sm:p-8 border-2">
           <p>
             I started with software because I wanted to understand how things
             work. That curiosity gradually turned into building web
