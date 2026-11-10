@@ -1,3 +1,7 @@
 <p align="center">
-  <i>Do experiments, so that you can know.</i>
+  <i>"I have no special talents. I am only passionately curious."</i>
+</p>
+
+<p align="right">
+  <strong>A. Einstein</strong>
 </p>
