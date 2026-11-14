@@ -1,0 +1,6 @@
+export { DailyDevIcon } from './daily-dev'
+export { EmailIcon } from './email'
+export { GithubIcon } from './github'
+export { LinkedinIcon } from './linkedin'
+export { MoonIcon } from './moon'
+export { SunIcon } from './sun'
