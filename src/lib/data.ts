@@ -34,7 +34,7 @@ const projects = [
     // disabled: true,
   },
   {
-    name: 'kv CLI',
+    name: 'Kv CLI',
     description:
       'A lightweight Rust CLI for secure local key-value storage using SQLite, with optional full-database encryption powered by SQLCipher.',
     tags: ['Rust'],
@@ -50,7 +50,7 @@ const projects = [
     accent: 'bg-indigo-400',
   },
   {
-    name: 'retemp',
+    name: 'Retemp',
     description:
       'A type-safe React Email and Resend utility for building reusable transactional emails with automatic TypeScript prop inference.',
     tags: ['TypeScript', 'React Email', 'Resend'],
